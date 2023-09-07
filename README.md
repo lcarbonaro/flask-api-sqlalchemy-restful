@@ -13,8 +13,9 @@ checks:
 set-up:
 
 make sure you're in the project folder
-`pipenv shell`    creates a pipfile in the project folder
 `pipenv install flask flask-sqlalchemy sqlalchemy-serializer flask-restful`
+`pipenv shell`    creates a pipfile in the project folder
+
 new file app.py
 
 code sections:
@@ -55,8 +56,13 @@ still from flask shell show how to create records:
 `db.session.add_all([b1,b2])`
 `db.session.commit()`
 
+add relationships between model classes
+- Product < --- >> Review
+- Buyer   < --- >> Review
 
-add `SerializerMixin` to classes
+add `SerializerMixin` to model classes
+
+add `serialize_rules` to model classes
 
 code sections:
 
