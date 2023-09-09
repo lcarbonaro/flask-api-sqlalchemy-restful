@@ -1,10 +1,10 @@
 See https://thepythoncode.com/article/create-a-restful-api-with-flask-in-python
 
-1. import Resource, Api from flask_restful
+1. `from flask_restful import Resource, Api` 
 
 2. `api = Api(app)`
 
-3. code the resources classes
+3. code the resource classes
     - one resource class for each entity, 
     - and a `get` and `post` method in each resource class
     - not to be confused with model classes
@@ -14,6 +14,6 @@ See https://thepythoncode.com/article/create-a-restful-api-with-flask-in-python
 
 4. `api.add_resource(MyResourceClass, '/resource')`
 
-5. move the route logic into `get` , `post` methods of each resource class
+5. move the various routes logic into `get` , `post` methods of each resource class
 
 
